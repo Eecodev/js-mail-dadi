@@ -21,12 +21,12 @@ let listEmail = [
 ]
 
 button.addEventListener('click', function(){
-    const email = document.getElementById('email').value;
-    console.log(email);
+    const inputEmail = document.getElementById('email').value;
+    console.log(inputEmail);
     let found = false;
     for(i = 0; i = listEmail.length - 1; i++){
         console.log(listEmail[i]);
-        if(listEmail[i] === email){
+        if(listEmail[i] === inputEmail){
             found = true;
         } else {
             console.log(found);
