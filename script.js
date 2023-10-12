@@ -23,10 +23,23 @@ let listEmail = [
 button.addEventListener('click', function(){
     const email = document.getElementById('email').value;
     console.log(email);
-
+    let found = false;
     for(let i = 0; i <= listEmail - 1; i++){
         console.log(listEmail[i]);
+        if(listEmail[i] === email){
+            found = true;
+        } else {
+            console.log(found);
+        }
 
+        let text, cla;
+        if (found){
+            cla = 'alert-success';
+            text = 'found';
+        } else {
+            cla = 'alert-danger';
+            text = 'not-found';
+        }
     }
 
 
