@@ -14,7 +14,7 @@ const email = document.querySelector('user-email');
 console.log(email);
 
 button.addEventListener('click', function(){
-    const email = document.querySelector('user-email').value;
+    const email = document.querySelector('email').value;
     console.log(email);
 })
 
