@@ -7,14 +7,28 @@
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-const button = document.getElementById('submit');
+const button = document.getElementById('btn');
 console.log(button);
 
-const email = document.querySelector('user-email');
+const email = document.getElementById('email');
 console.log(email);
 
+let listEmail = [
+    'pippo@gmail.com',
+    'minnie@gmail.com',
+    'topolino@gmail.com',
+    'pluto@gmail.com'
+]
+
 button.addEventListener('click', function(){
-    const email = document.querySelector('email').value;
+    const email = document.getElementById('email').value;
     console.log(email);
+
+    for(let i = 0; i <= listEmail - 1; i++){
+        console.log(listEmail[i]);
+
+    }
+
+
 })
 
